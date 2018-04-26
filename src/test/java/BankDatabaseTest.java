@@ -28,6 +28,8 @@ public class BankDatabaseTest {
 
     @Test
     public void debit() throws Exception {
+        db.debit(12345,100);
+        assertEquals(1100.0,db.getTotalBalance(12345), 0.00001);
     }
 
 }
