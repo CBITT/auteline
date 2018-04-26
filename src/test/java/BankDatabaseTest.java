@@ -17,6 +17,7 @@ public class BankDatabaseTest {
 
     @Test
     public void getTotalBalance() throws Exception {
+        assertEquals(db.getTotalBalance(12345), 1200, 0.0000001);
     }
 
     @Test
